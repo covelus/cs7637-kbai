@@ -163,7 +163,7 @@ class TestAgent(unittest.TestCase):
             self.problems_testcase_exceptions_not_captured(testcase, restrict_to)
 
     def test_milestone2_basic_only_one(self):
-        milestone_case = self.milestone2_B[0]
+        milestone_case = self.milestone2_B[self.BASIC]
         test_to_run = "B-01"
         self.problems_testcase(milestone_case, restrict_to=milestone_case[:-3] + " " + test_to_run)
 
