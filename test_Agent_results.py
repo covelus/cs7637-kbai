@@ -11,25 +11,21 @@ Tests for CS7637 Knowledge-Based Artificial Intelligence Raven's Progressive Mat
 __credits__ = "Raven's Progressive Matrix CS7637 base code authors"
 __author__ = "Breogan COSTA, CS7637 RavensProject.py base code authors"
 
-import unittest
-import os
+from unittest import TestCase
 import warnings
+import os
 
 from Agent import Agent
 from ProblemSet import ProblemSet
 
 
-class TestAgent(unittest.TestCase):
+class TestAgent(TestCase):
     BASIC = 0
     CHALLENGE = 1
     milestone2_B = ["Basic Problems B",
                     "Challenge Problems B"]
     milestone3_C = ["Basic Problems C",
                     "Challenge Problems C"]
-    milestone4_D = ["Basic Problems E",
-                    "Challenge Problems E"]
-    milestone4_E = ["Basic Problems E",
-                    "Challenge Problems E"]
 
     def setUp(self) -> None:
         warnings.simplefilter("ignore")
@@ -48,7 +44,6 @@ class TestAgent(unittest.TestCase):
         """
         done = False
         problems = []
-
         r = open(os.path.join("Problems",
                               "ProblemSetList.txt"))
         while not done:
@@ -196,6 +191,3 @@ EXCEPTIONS_HANDLING = False
 """
 EXCEPTIONS_HANDLING controls if exceptions must be capture when calling Agent.py
 """
-
-if __name__ == '__main__':
-    unittest.main()
