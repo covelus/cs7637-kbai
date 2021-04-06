@@ -1,3 +1,10 @@
+"""
+Georgia Institute of Technology.
+Tests for CS7637 Knowledge-Based Artificial Intelligence Miniproject 5, Monsters Diagnosis agent project
+"""
+__credits__ = "miniproject5 CS7637 base code authors"
+__author__ = "Breogan COSTA, CS7637 miniproject5 base code authors"
+
 from unittest import TestCase
 
 from MonsterDiagnosisAgent import MonsterDiagnosisAgent
